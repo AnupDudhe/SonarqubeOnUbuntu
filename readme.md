@@ -54,4 +54,7 @@ sonar.jdbc.url=jdbc:postgresql://localhost:5432/sonarqube
 
 Set the web service to listen on localhost:
 sonar.web.host=127.0.0.1
+cd /opt/sonarqube/bin/linux-x86-64 
+./sonar.sh start
+./sonar.sh status
 ```
