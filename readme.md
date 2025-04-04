@@ -36,6 +36,19 @@ sudo wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-25.3
 sudo unzip sonarqube-25.3.0.104237.zip
 sudo mv sonarqube-25.3.0.104237 sonarqube
 ```
+Create a SonarQube User
+```
+sudo groupadd sonar
+sudo useradd -d /opt/sonarqube -g sonar sonar
+sudo chown -R sonar:sonar /opt/sonarqube
+```
 
+Configure SonarQube
+```
+sudo vim /opt/sonarqube/conf/sonar.properties
 
-
+Modify these lines:
+sonar.jdbc.username=sonar
+sonar.jdbc.password=StrongPassword
+sonar.jdbc.url=jdbc:postgresql://localhost:5432/sonarqube
+```
