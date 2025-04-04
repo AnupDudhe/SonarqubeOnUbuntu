@@ -51,4 +51,7 @@ Modify these lines:
 sonar.jdbc.username=sonar
 sonar.jdbc.password=StrongPassword
 sonar.jdbc.url=jdbc:postgresql://localhost:5432/sonarqube
+
+Set the web service to listen on localhost:
+sonar.web.host=127.0.0.1
 ```
