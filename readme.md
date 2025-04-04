@@ -14,5 +14,10 @@ Start and Enable PostgreSQL
 sudo systemctl enable postgresql
 sudo systemctl start postgresql
 ```
+Create SonarQube Database and User 
+```
+sudo -i -u postgres psql
+```
+
 
 
