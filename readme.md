@@ -1,3 +1,6 @@
+ram - 8gb 
+space 30gb
+
 Step 1: Update System and Install Dependencies
 ```
 sudo apt update && sudo apt upgrade -y
