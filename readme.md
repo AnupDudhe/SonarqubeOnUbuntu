@@ -58,3 +58,9 @@ cd /opt/sonarqube/bin/linux-x86-64
 ./sonar.sh start
 ./sonar.sh status
 ```
+
+
+cat /opt/sonarqube/logs/es.log
+cat /opt/sonarqube/logs/sonar.log
+sudo sysctl -w vm.max_map_count=262144
+echo "vm.max_map_count=262144" | sudo tee -a /etc/sysctl.conf
